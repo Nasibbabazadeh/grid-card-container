@@ -10,13 +10,35 @@ body {
   overflow-x: hidden;
 }
 .grid__container {
-  max-width: 1280px;
+  max-width: 1480px;
   margin: 80px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
+  grid-template-rows: repeat(32, 100px);
+}
+article {
+  width: auto;
+  height: auto;
 }
 img {
   object-fit: contain;
-  width: 300px;
+  max-width: 370px;
+}
+.grid__row-4 {
+  grid-row: span 4;
+}
+
+.grid__row-3 {
+  grid-row: span 3;
+}
+
+.grid__row-6 {
+  grid-row: span 6;
+}
+
+.grid__row-5 {
+  grid-row: span 5;
+}
+.grid__row-3 {
+  grid-row: span 3;
 }
